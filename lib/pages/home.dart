@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:koushik/pages/customAppBar.dart';
+import 'package:koushik/pages/settings.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -6,38 +8,41 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("First App"),
-        centerTitle: true,
-        leading: Icon(Icons.notifications_active_rounded),
-        elevation: 0,
-        actions: [
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Icon(Icons.shop),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Icon(Icons.boy_rounded),
-          ),
-        ],
+      // appBar: AppBar(
+      //   title: Text("First App"),
+      //   centerTitle: true,
+      //   elevation: 0,
+      //   backgroundColor: Colors.transparent,
+      //   actions: [
+      //     Padding(
+      //       padding: const EdgeInsets.all(8.0),
+      //       child: Icon(Icons.notifications_active_rounded),
+      //     )
+      //   ],
+      //   flexibleSpace: Container(
+      //     decoration: BoxDecoration(
+      //         color: Colors.amber[200],
+      //         borderRadius: BorderRadius.only(
+      //             bottomLeft: Radius.circular(20),
+      //             bottomRight: Radius.circular(20))),
+      //   ),
+      //   toolbarHeight: 80,
+      // ),
+
+      appBar: CustomAppBar(
+        title: "FirstApp",
+        onMenuActionTap: () => {
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => SettingsPage()))
+        },
+        showActionIcon: true,
+        leading: Icon(Icons.home),
       ),
       body: SafeArea(
         child: Center(
           child: Container(
-            color: Colors.grey[200],
-            // height: MediaQuery.of(context).size.height / 3,
             height: MediaQuery.of(context).size.height,
             width: MediaQuery.of(context).size.width,
-            // child: Text(
-            //   "Hello World",
-            //   style: TextStyle(
-            //       color: Colors.blue,
-            //       fontFamily: "Roboto",
-            //       fontSize: 24,
-            //       fontWeight: FontWeight.bold),
-            // ),
-
             child: Column(
               children: [
                 Padding(

@@ -1,15 +1,10 @@
-import 'package:boxicons/boxicons.dart';
+import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:koushik/pages/home.dart';
 import 'package:koushik/pages/login.dart';
-import 'package:koushik/views/myCard.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class WalletPage extends StatefulWidget {
   const WalletPage({super.key});
-
   @override
   State<WalletPage> createState() => _WalletPageState();
 }
@@ -17,6 +12,11 @@ class WalletPage extends StatefulWidget {
 class _WalletPageState extends State<WalletPage> {
   final pageController = PageController();
   final List<Widget> pageList = [LoginPage(), HomePage()];
+
+  final List<IconData> iconList = [
+    Icons.home,
+    Icons.settings,
+  ];
   var _activeIndex = 0;
   @override
   Widget build(BuildContext context) {
@@ -132,35 +132,35 @@ class _WalletPageState extends State<WalletPage> {
       //     ),
       //   ),
       // ),
-      // bottomNavigationBar: AnimatedBottomNavigationBar(
-      //   icons: iconList,
-      //   activeIndex: _activeIndex,
-      //   // gapLocation: GapLocation.end,
-      //   notchSmoothness: NotchSmoothness.verySmoothEdge,
-      //   // leftCornerRadius: 32,
-      //   // rightCornerRadius: 32,
-      //   onTap: (index) => setState(() => _activeIndex = index),
-      //   //other params
-      // ),
-
-      bottomNavigationBar: BottomNavigationBar(
-        items: [
-          BottomNavigationBarItem(icon: Icon(Icons.lock), label: "Login"),
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home")
-        ],
-        onTap: (int index) {
-          setState(() {
-            _activeIndex = index;
-          });
-        },
+      bottomNavigationBar: AnimatedBottomNavigationBar(
+        icons: iconList,
+        activeIndex: _activeIndex,
+        gapLocation: GapLocation.center,
+        notchSmoothness: NotchSmoothness.verySmoothEdge,
+        // leftCornerRadius: 32,
+        // rightCornerRadius: 32,
+        onTap: (index) => setState(() => _activeIndex = index),
+        //other params
       ),
+
+      // bottomNavigationBar: BottomNavigationBar(
+      //   items: [
+      //     BottomNavigationBarItem(icon: Icon(Icons.lock), label: "Login"),
+      //     BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home")
+      //   ],
+      //   onTap: (int index) {
+      //     setState(() {
+      //       _activeIndex = index;
+      //     });
+      //   },
+      // ),
 
       //////////////////////////////////////////////////////
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: Icon(Icons.money),
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
 }

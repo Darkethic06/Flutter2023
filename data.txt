@@ -1,0 +1,112 @@
+Module 1: Introduction
+•	What is Flutter?
+•	Understand Flutter Architecture
+•	Flutter Versions
+•	Flutter Set-up: –
+o	Windows
+o	Mac-OS
+•	Flutter Alternatives
+Module 2: Flutter & Dart Basic (Quiz App & Fundamentals)
+•	Dart
+o	Dart Basic & Fundamentals
+o	Class Constructors & Named Arguments
+o	Additional Syntaxes
+•	Flutter
+o	Widget Tree
+o	Functions (Connecting Functions, Buttons, Anonymous Functions)
+o	Update Widget Data
+Module 3: Running Apps in Different Console:
+•	Running App on Android, iOS
+•	Debug Applications
+•	Dart Development Tools
+Module 4: Widgets, Styling, Adding Logic:
+•	Core Flutter Widgets
+•	Mapping Data into Widgets
+•	Building Custom List Items
+•	Splitting the App into Widgets
+•	Adding User Transaction to the List
+•	Working with List View
+•	Deleting Transactions
+Module 5: Responsive & Adaptive User Interfaces & Apps
+•	What Does “Responsive” & “Adaptive” User Interface Means?
+•	Calculating Size Dynamically
+•	Using “Layout Builder” Widgets
+•	Rendering Alternative Landscape Content
+•	Managing The Media Query Object
+•	Using Cupertino (iOS) Widgets
+•	Creating Custom Adaptive Widgets
+Module 6: Widget & Flutter Internals – Deep Dive
+•	Widget Tree & Element Tree
+•	How Flutter Executes Build ()
+•	Using “Const” Widgets & Constructors
+•	Using Builder Methods
+•	Widgets Life Cycle
+•	Using Keys
+Module 7: Navigation & Multiple Screens
+•	Navigation to a New Page
+•	Using Named Routes & Passing Data
+•	Tabs & Drawers
+•	Popping Pages & Passing Data Back
+•	Filter Switches
+•	Filter Logic
+Module 8: State Management
+•	Define Data Model
+•	Adding Navigation
+•	Why State Management?
+•	Working with Providers & Listeners
+•	Using Nested Model & Providers
+Module 9: Working with User Input & Forms
+•	Showing Alert Dialogues
+•	Using Forms & Working with Form
+•	Image Input & Image Preview
+•	Adding Validation
+Module 10: Sending HTTP Requests
+•	How to Connect Flutter to a Database?
+•	Send HTTP Request
+•	Send post Request
+•	Working with “Futures” in Dart
+•	Futures & Async
+•	Handling Errors
+•	Fetching Data, initState&“of (context)”
+•	Update Data via PATCH Request
+•	Utilizing optimistic Updating
+•	Using “Future Builder” Widget
+Module 11: Adding User Authentication
+•	How Authentication Works?
+•	Auth Screen
+•	Signing Up Requests & URLs
+•	Handling Authentication Error
+•	Managing the Auth Token Locally
+•	Using “Proxy Provider”
+•	Adding The Token To All Requests
+•	Auto Login Feature
+Module 12: Animations
+•	Scratch Animation
+•	Using “Animation Builder” Widget
+•	Built-In Animation & Transition
+•	Adding “Hero” Transition
+•	Working with “Slivers”
+Module 13: Using Native Device Features
+•	Place List & Place Provider Setup
+•	Use of Image Picker
+•	Managing Data & Image via the Process
+•	Preparing SQLite
+•	Storming & Fetching Data with SQLite
+•	Static Map Snapshots
+•	Rendering Dynamic Map
+•	Storing Location in SQLite
+Module 14: Fire Base, Image Upload, Push Notifications
+•	What is Fire Base?
+•	Flutter Fire Base Versions
+•	Flutter & Fire Base
+•	Adding “Google Services – Info.plist”
+•	Rendering Stream Data with Stream API
+•	Basic Authentication Screen
+•	Listening to Chat Messages
+•	Sending & Ordering Chat Messages
+Module 15: Running Native, Swift, Objective C, Java or Kotlin Code
+•	Running Android Code
+•	Running iOS Code
+Module 16: Publish App in App Store
+Module 17: Project
+

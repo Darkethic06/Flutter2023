@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:koushik/pages/dashboard.dart';
 import 'package:koushik/pages/home.dart';
 import 'package:koushik/pages/login.dart';
 import 'package:koushik/pages/wallet.dart';
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: WalletPage(),
+      home: Dashboard(),
     );
   }
 }
